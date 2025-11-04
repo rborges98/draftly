@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-draftly-purple: #8b5cf6;
+
+  --animate-loading: loading-bounce .5s ease alternate infinite;
+
+  @keyframes loading-bounce{
+    0% {
+      top: 34px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+    40% {
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+    100% {
+      top: 0%;
+    }
+  }
+
+}
+
+@utility animate-delay-* {
+  animation-delay: --value(integer)ms;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@draftly/shared",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "mongoose": "^8.13.2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "draftly",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=web",
+    "dev:server": "npm run dev --workspace=server",
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:server\"",
+    "build:web": "npm --workspace=web run build",
+    "build:server": "npm --workspace=server run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0",
+    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "dotenv": "^17.2.3",
+    "eslint": "^9"
+  }
+}
