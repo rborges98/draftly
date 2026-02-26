@@ -11,8 +11,10 @@ export async function generateMetadata({
 }: {
   params: Promise<{ roomId: string }>
 }) {
+  const { roomId } = await params
+
   return {
-    title: `Room ${params.id} — Draftly`,
+    title: `Room ${roomId} — Draftly`,
     description: 'Collaborate in real-time with your team on Draftly.'
   }
 }
