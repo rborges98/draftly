@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@draftly/shared": "*",
     "@radix-ui/react-slot": "^1.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -17,7 +18,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "mongoose": "^8.13.2",
-    "next": "15.3.0",
+    "next": "^16.1.6",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
@@ -27,13 +28,12 @@
     "socket.io-client": "^4.8.1",
     "tailwind-merge": "^3.2.0",
     "tailwind-variants": "^3.1.1",
-    "zustand": "^5.0.3",
-    "@draftly/shared": "*"
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.4",
-    "@types/react": "^19",
     "@types/node": "^20",
+    "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint-config-next": "15.3.0",
     "tailwindcss": "^4"
