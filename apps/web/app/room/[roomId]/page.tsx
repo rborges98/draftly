@@ -6,6 +6,17 @@ import { getRoom } from '@/server/actions/rooms'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ roomId: string }>
+}) {
+  return {
+    title: `Room ${params.id} — Draftly`,
+    description: 'Collaborate in real-time with your team on Draftly.'
+  }
+}
+
 const Page = async ({ params }: { params: Promise<{ roomId: string }> }) => {
   const { roomId } = await params
 
