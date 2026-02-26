@@ -44,7 +44,7 @@ Before you begin, ensure you meet the following requirements:
 ### 1. Clone the repository
 
 ```sh
-git clone https://github.com/<your-username>/draftly.git
+git clone https://github.com/rborges98/draftly.git
 cd draftly
 ```
 
