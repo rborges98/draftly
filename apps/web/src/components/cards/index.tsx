@@ -26,7 +26,7 @@ export const Create = () => {
       return message
     }
 
-    router.push('/room/' + roomId)
+    router.push('/room/' + roomId.toLowerCase())
   }
 
   return (
@@ -84,7 +84,7 @@ export const Join = () => {
       return message
     }
 
-    router.push('/room/' + roomId)
+    router.push('/room/' + roomId.toLowerCase())
   }
 
   return (
